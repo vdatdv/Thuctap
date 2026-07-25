@@ -1,0 +1,53 @@
+    <!DOCTYPE html>
+    <html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Danh sách học viên</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+      <div class="box">
+          <h2>Tính tuổi</h2>
+
+    <label>Nhập năm sinh:</label>
+    <input type="number" id="birthYear" placeholder="Ví dụ: 2004">
+
+    <button onclick="showAge()">Tính tuổi</button>
+
+    <p id="resultAge"></p>
+
+    <hr>
+
+    <h2>Tính điểm trung bình</h2>
+
+    <input type="number" id="math" placeholder="Điểm Toán">
+    <input type="number" id="physics" placeholder="Điểm Lý">
+    <input type="number" id="chemistry" placeholder="Điểm Hóa">
+
+    <button onclick="showAverage()">Tính điểm TB</button>
+
+    <p id="resultAverage"></p>
+
+    <hr>
+
+    <h2>Tính tổng tiền</h2>
+
+    <input type="number" id="price" placeholder="Đơn giá">
+    <input type="number" id="quantity" placeholder="Số lượng">
+
+    <button onclick="showTotal()">Tính tiền</button>
+
+    <p id="resultTotal"></p>
+      </div>
+
+    <h1>Danh sách học viên</h1>
+
+    <div id="students" class="grid"></div>
+
+    <script src="functions.js"></script>
+    <script src="test.js"></script>
+
+    </body>
+    </html>
