@@ -1,0 +1,140 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+}
+
+.container {
+    width: 900px;
+    margin: 30px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+form input,
+form select {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background: #0d6efd;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background: #0b5ed7;
+}
+
+#error {
+    color: red;
+    margin-bottom: 15px;
+    min-height: 20px;
+}
+
+#search {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+.filter {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.filter button {
+    padding: 10px 20px;
+    border: none;
+    background: #ddd;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.filter button.active {
+    background: #0d6efd;
+    color: white;
+}
+
+#count {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th,
+table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+table th {
+    background: #0d6efd;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #f8f8f8;
+}
+
+.action button {
+    border: none;
+    color: white;
+    padding: 6px 10px;
+    margin: 0 2px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.edit {
+    background: orange;
+}
+
+.delete {
+    background: red;
+}
+
+@media (max-width:768px){
+
+    .container{
+        width:95%;
+    }
+
+    form{
+        flex-direction:column;
+    }
+
+    .filter{
+        flex-direction:column;
+    }
+
+}
